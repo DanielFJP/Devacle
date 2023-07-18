@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap');
 
-body {
-    background-color: black;
+body, html {
     margin: 0;
     padding: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(img/fondo_img.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
 }
+
 
 .navbar {
     background: rgb(0, 0, 0) !important;
@@ -26,7 +33,6 @@ body {
     height: auto;
     
 }
-
 
 .navbar-toggler {
     border: none;
@@ -99,6 +105,7 @@ body {
 
 
 
+
 .contenedor2 {
     width: 100%;
     /*height: calc(62vh - 10vh);*/
@@ -106,7 +113,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 
