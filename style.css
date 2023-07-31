@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap');
 
-body, html {
+/*body, html {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -10,6 +10,34 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     position: fixed;
+}*/
+body, html{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+#video-container, #image-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#background-video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
 }
 
 
@@ -80,7 +108,7 @@ body, html {
 
 
 
-.fondo {
+/*.fondo {
     position: fixed;
     position: absolute;
     z-index: -100;
@@ -101,7 +129,7 @@ body, html {
     width: 100%;
     height: 100%;
     transform: translate(-50%, -50%);
-}
+}*/
 
 
 
@@ -149,3 +177,4 @@ body, html {
     transition: 0.5s;
     letter-spacing: 0.25em;
 }
+
