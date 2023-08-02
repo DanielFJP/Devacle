@@ -41,6 +41,34 @@ body, html{
 }
 
 
+/*#logotipo{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 80%;
+    position: relative;
+    left: 40px;
+    
+}*/
+
+@media (max-width:983px){
+    .navbar-brand{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100% !important;
+        position: relative !important;
+       
+    }
+
+    .navbar-brand .logo{
+        max-width: 250px !important;
+        position: absolute !important;
+        left: 55% !important;
+        top: 1px;
+        transform: translateX(-50%) !important;
+    }
+}
 .navbar {
     background: rgb(0, 0, 0) !important;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7035189075630253) 30%) !important;
@@ -85,6 +113,16 @@ body, html{
 }
 
 #item:hover {
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 2px rgb(255, 136, 0), 0 0 1em rgb(250, 13, 13), 0 0 0.2em red;
+}
+
+#navbarDropdown1:hover{
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 2px rgb(255, 136, 0), 0 0 1em rgb(250, 13, 13), 0 0 0.2em red;
+}
+
+#navbarDropdown2:hover {
     color: rgb(0, 0, 0);
     text-shadow: 1px 1px 2px rgb(255, 136, 0), 0 0 1em rgb(250, 13, 13), 0 0 0.2em red;
 }
