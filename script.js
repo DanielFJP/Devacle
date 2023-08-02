@@ -6,7 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
     const speed = connection.downlink;
 
-    const thresholdSpeed = 2;
+    const thresholdSpeed = 1;
+
+    console.log("Speed:", speed);
+    console.log("Threshold Speed:", thresholdSpeed);
 
     if (speed >= thresholdSpeed) {
         videoContainer.style.display = "block";

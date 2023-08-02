@@ -16,6 +16,7 @@ body, html{
   padding: 0;
   height: 100%;
   overflow: hidden;
+  
 }
 
 #video-container, #image-container{
@@ -40,16 +41,6 @@ body, html{
     display: none;
 }
 
-
-/*#logotipo{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    width: 80%;
-    position: relative;
-    left: 40px;
-    
-}*/
 
 @media (max-width:983px){
     .navbar-brand{
