@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DebAcle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="img/icono.jpg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -31,7 +34,7 @@
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary barra_de_navegacion" data-bs-theme="dark">
         <div class="container ">
-                <a class="navbar-brand" href="#" >
+                <a class="navbar-brand" href="#videos" >
                     <img src="img/logo.png" alt="Logo" class="d-inline-block align-text-top logo">
                 </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -41,10 +44,10 @@
             <div class="collapse navbar-collapse  justify-content-center" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#" id="item">Inicio</a>
+                        <a class="nav-link" href="#videos" id="item">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" id="item">Videos</a>
+                        <a class="nav-link" href="#videos" id="item">Videos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" id="item">Galería</a>
@@ -56,6 +59,11 @@
                             Productos
                         </a>
                         <ul class="dropdown-menu dropend">
+                            <li class="dropdown-submenu ">
+                                <a class="dropdown-item " href="#productos"  id="navbarDropdown1">
+                                    Todos
+                                </a>
+                            </li>
                             <li class="dropdown-submenu ">
                                 <a class="dropdown-item dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
                                     aria-expanded="false" id="navbarDropdown1" >
@@ -84,7 +92,7 @@
                         <a class="nav-link" href="#" id="item">Completas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" id="item">Contacto</a>
+                        <a class="nav-link" href="#contacto" id="item">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -92,9 +100,12 @@
     </nav>
 
 <!--Videos Youtube-->
-
-    <div class="container justify-content-center align-items-center "
-        style=" height: calc(80vh - 13vh); display: flex; position: relative; bottom: -13vh;">
+<section class="scroll" id="videos">
+    <div class="titulo-videos">
+        <h1>Videos</h1>
+    </div>
+    <div class="container videos-container justify-content-center align-items-center "
+        style="  display: flex;" >
         <div class=" contenedor2 row row-cols-1 row-cols-md-2 g-4">
             <div class="col col-sm-12 col-md-12 col-lg-6 col-xl-6">
                 <div class="card ">
@@ -118,6 +129,104 @@
             </div>
         </div>
     </div>
+    </section>
+
+<!--Categorias-->
+
+    <section class="scroll" id="productos">
+        <div class="container categorias-padre">
+            <div class="titulo-categorias">
+                <h1>Productos</h1>
+            </div>
+            <div class="row categorias-container">
+                <div class="col-md-6 col-lg-6 categoria">
+                    <h2>Medias</h2>
+                    <div class="cards-categorias">
+                        <div class="card-img">
+                            <img src="img/fotos-cards/medias.png" alt="imagen Medias">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6 categoria">
+                    <h2>Gorros</h2>
+                    <div class="cards-categorias">
+                       <div class="card-img">
+                          <img src="img/fotos-cards/gorro.png" alt="imagen Gorros">
+                       </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6 categoria">
+                    <h2>Tablas</h2>
+                    <div class="cards-categorias">
+                        <div class="card-img">
+                            <img src="img/fotos-cards/tabla.png" alt="imagen tablas">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6 categoria">
+                    <h2>Camisetas</h2>
+                    <div class="cards-categorias">
+                        <div class="card-img">
+                            <img src="img/fotos-cards/camisetas.png" alt="imagen Camisetas">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<!--Formulario-->
+
+    <section class="scroll" id="contacto">
+        <div class="container">
+            <div class="titulo-contacto">
+                <h1>Contacto</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <form class="formulario-contacto">
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu Nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="correo">Correo:</label>
+                            <input type="email" class="form-control" id="correo" placeholder="Ingresa tu Correo">
+                        </div>
+                        <div class="form-group">
+                            <label for="celular">Numero:</label>
+                            <input type="tel" class="form-control" id="numero" placeholder="Ingresa tu Numero">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea class="form-control" id="mensaje" rows="4" placeholder="Ingresa tu Mensaje"></textarea>
+                        </div>
+                        <button type="submit" class="btn  btn-enviar">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--Footer-->
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-logo">
+            <img src="img/logo.png" alt="fondo devacle">
+        </div>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/debacle.dealer" ><i class="fa-brands fa-square-facebook" id="facebook"></i></a>
+            <a href="https://www.instagram.com/debacle.dealer/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <p class="footer-rights">© DevAcle 2022 Todos los derechos reservados.</p>
+    </div>
+</footer>
 
     <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
